@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 120px;
+  height: 68px;
+  background: #ffffff;
+  border-bottom: 1px solid #f2f4f7;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.logoRental {
+  color: #101828;
+}
+
+.logoCar {
+  color: #00aad4;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.navLink {
+  font-size: 16px;
+  font-weight: 500;
+  color: #101828;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: #0095ba;
+}
+
+.active {
+  color: #00aad4;
+}
