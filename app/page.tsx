@@ -1,6 +1,11 @@
 import css from "./Home.module.css";
 import Link from "next/link";
 
+export const metadata = {
+  title: "RentalCar — Find your perfect rental car",
+  description: "Reliable and budget-friendly car rentals for any journey",
+};
+
 export default function Home() {
   return (
     <main className={css.hero}>
