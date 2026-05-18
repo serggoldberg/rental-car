@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { CarsParams, getCarFilters } from "@/lib/api/api";
 import css from "./Filters.module.css";
+import Select from "@/components/Select/Select";
 
 interface FiltersProps {
   onSearch: (params: CarsParams) => void;
@@ -19,6 +20,17 @@ export default function Filters({ onSearch }: FiltersProps) {
     queryKey: ["filters"],
     queryFn: getCarFilters,
   });
+
+  const brandOptions =
+    filters?.brands.map((item) => ({
+      value: item,
+      label: item,
+    })) ?? [];
+
+  const priceOptions = [30, 40, 50, 60, 70, 80].map((price) => ({
+    value: String(price),
+    label: String(price),
+  }));
 
   const handleSearch = () => {
     onSearch({
@@ -39,37 +51,21 @@ export default function Filters({ onSearch }: FiltersProps) {
 
   return (
     <div className={css.filters}>
-      <div className={css.filterGroup}>
-        <label className={css.label}>Car brand</label>
-        <select
-          className={css.select}
-          value={brand}
-          onChange={(event) => setBrand(event.target.value)}
-        >
-          <option value="">Choose a brand</option>
-          {filters?.brands.map((brand) => (
-            <option key={brand} value={brand}>
-              {brand}
-            </option>
-          ))}
-        </select>
-      </div>
+      <Select
+        label="Car brand"
+        placeholder="Choose a brand"
+        options={brandOptions}
+        value={brand}
+        onChange={setBrand}
+      />
 
-      <div className={css.filterGroup}>
-        <label className={css.label}>Price / hour</label>
-        <select
-          className={css.select}
-          value={price}
-          onChange={(event) => setPrice(event.target.value)}
-        >
-          <option value="">Choose a price</option>
-          {[30, 40, 50, 60, 70, 80].map((price) => (
-            <option key={price} value={price}>
-              To ${price}
-            </option>
-          ))}
-        </select>
-      </div>
+      <Select
+        label="Price / hour"
+        placeholder="Choose a price"
+        options={priceOptions}
+        value={price}
+        onChange={setPrice}
+      />
 
       <div className={css.filterGroup}>
         <label className={css.label}>Car mileage / km</label>

@@ -1,3 +1,5 @@
-.container {
-  padding: 32px 128px;
+.filtersContainer {
+  display: flex;
+  justify-content: center;
+  padding: 84px 258px 60px 258px;
 }

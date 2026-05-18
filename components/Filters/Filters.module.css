@@ -1,9 +1,9 @@
 .filters {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 16px;
-  padding: 32px 128px;
-  background: #ffffff;
+  max-width: 924px;
+  max-height: 96px;
 }
 
 .filterGroup {
@@ -13,49 +13,48 @@
 }
 
 .label {
-  font-size: 14px;
-  font-weight: 500;
-  color: #8a8a89;
-}
-
-.select {
-  height: 48px;
-  padding: 0 16px;
-  border: 1px solid #d7dcdf;
-  border-radius: 14px;
-  font-size: 16px;
-  font-weight: 500;
-  color: #101828;
-  background: #f7f7f7;
-  cursor: pointer;
-  outline: none;
-  min-width: 204px;
+  max-height: 16px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #8d929a;
 }
 
 .mileageInputs {
   display: flex;
-  gap: 0;
+  gap: 1px;
+  min-width: 320px;
 }
 
 .input {
-  height: 48px;
-  width: 120px;
-  padding: 0 16px;
-  border: 1px solid #d7dcdf;
+  height: 44px;
+  width: 160px;
+  padding: 12px 24px 12px;
+  border: none;
   font-size: 16px;
   font-weight: 500;
   color: #101828;
-  background: #f7f7f7;
+  background: #ffffff;
   outline: none;
 }
 
 .input:first-child {
-  border-radius: 14px 0 0 14px;
+  border-radius: 12px 0 0 12px;
   border-right: none;
 }
 
 .input:last-child {
-  border-radius: 0 14px 14px 0;
+  border-radius: 0 12px 12px 0;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .buttons {
@@ -65,33 +64,34 @@
 }
 
 .searchButton {
-  height: 48px;
-  padding: 0 44px;
-  background: #3470ff;
+  height: 44px;
+  max-width: 156px;
+  padding: 12px 51px;
+  background: #00aad4;
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   border: none;
   border-radius: 12px;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.3s;
 }
 
 .searchButton:hover {
-  background: #0353e9;
+  background: #0095ba;
 }
 
 .clearButton {
   background: none;
   border: none;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
-  color: #101828;
+  color: #8d929a;
   cursor: pointer;
   text-align: center;
   text-decoration: underline;
 }
 
 .clearButton:hover {
-  color: #3470ff;
+  color: #00aad4;
 }

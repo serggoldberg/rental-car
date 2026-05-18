@@ -11,8 +11,10 @@ export default function CatalogPage() {
 
   return (
     <main>
-      <Filters onSearch={setFilters} />
-      <div className={css.container}>
+      <div className={css.filtersContainer}>
+        <Filters onSearch={setFilters} />
+      </div>
+      <div className={css.carsContainer}>
         <p>Cars will be here</p>
       </div>
     </main>
