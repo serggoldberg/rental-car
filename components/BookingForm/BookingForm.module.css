@@ -3,7 +3,6 @@
   border: 1px solid #e0e0e0;
   border-radius: 16px;
   padding: 32px;
-  margin-top: 24px;
 }
 
 .title {
@@ -39,7 +38,7 @@
 }
 
 .input:focus {
-  border-color: #3470ff;
+  border-color: #00aad4;
 }
 
 .textarea {
@@ -57,13 +56,13 @@
 }
 
 .textarea:focus {
-  border-color: #3470ff;
+  border-color: #00aad4;
 }
 
 .button {
   width: 100%;
   padding: 14px;
-  background: #3470ff;
+  background: #00aad4;
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
@@ -74,7 +73,7 @@
 }
 
 .button:hover {
-  background: #2860e0;
+  background: #0095ba;
 }
 
 .button:disabled {
@@ -83,13 +82,13 @@
 }
 
 .error {
-  color: #d92d20;
+  color: #00aad4;
   font-size: 13px;
   margin-bottom: 12px;
 }
 
 .success {
-  color: #12b76a;
+  color: #00aad4;
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 12px;

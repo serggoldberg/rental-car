@@ -1,5 +1,5 @@
 .page {
-  padding: 40px 128px;
+  padding: 84px 120px 176px 120px;
   background: #f7f7f7;
 }
 
@@ -12,9 +12,9 @@
 .left {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
   flex-shrink: 0;
-  width: 576px;
+  width: 640px;
 }
 
 .imageWrapper {
@@ -23,8 +23,8 @@
 }
 
 .image {
-  width: 528px;
-  height: 448px;
+  width: 640px;
+  height: 512px;
   object-fit: cover;
 }
 
@@ -45,35 +45,38 @@
 }
 
 .title {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 600;
   color: #101828;
 }
 
 .model {
-  color: #3470ff;
+  color: #00aad4;
 }
 
 .article {
-  font-size: 12px;
-  color: #6c717b;
+  font-size: 16px;
+  font-weight: 500;
+  color: #8d929a;
 }
 
 .location {
-  font-size: 14px;
-  color: #6c717b;
+  font-size: 16px;
+  font-weight: 500;
+  color: #101828;
 }
 
 .price {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 600;
-  color: #3470ff;
+  color: #00aad4;
 }
 
 .description {
-  font-size: 14px;
-  color: #363535;
-  line-height: 1.6;
+  font-size: 16px;
+  font-weight: 500;
+  color: #101828;
+  line-height: 1.2;
 }
 
 .divider {
@@ -88,7 +91,7 @@
 }
 
 .sectionTitle {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 600;
   color: #101828;
 }
@@ -104,11 +107,12 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 14px;
-  color: #363535;
+  font-size: 16px;
+  font-weight: 500;
+  color: #101828;
 }
 
 .icon {
-  color: #3470ff;
+  color: #00aad4;
   flex-shrink: 0;
 }
