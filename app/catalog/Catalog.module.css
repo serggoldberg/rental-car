@@ -3,3 +3,34 @@
   justify-content: center;
   padding: 84px 258px 60px 258px;
 }
+.carsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 32px 128px;
+  list-style: none;
+}
+
+.loadMore {
+  display: flex;
+  justify-content: center;
+  padding: 32px 0;
+}
+
+.loadMoreButton {
+  padding: 14px 44px;
+  background: transparent;
+  color: #101828;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #101828;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: underline;
+}
+
+.loadMoreButton:hover {
+  background: #101828;
+  color: #ffffff;
+}
